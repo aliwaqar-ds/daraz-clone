@@ -141,3 +141,40 @@ footer {
   margin-top: 40px;
 }
 
+
+/* Mobile Responsiveness (For screens under 768px) */
+@media (max-width: 768px) {
+  /* 1. Header Layout */
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  /* 2. Hero Section Stack */
+  .hero-section {
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .categories-sidebar,
+  .banner {
+    width: 100%;
+  }
+
+  /* 3. Product Grid Wrap */
+  .product-grid {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .product-card {
+    width: 47%; /* Shows 2 cards side-by-side on mobile screens */
+  }
+}
+
